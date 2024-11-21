@@ -1,7 +1,7 @@
 = docgist-pe
 watanabe3tipapa
 
-(./images/UC900.png)[]
+image::./images/UC900.png["This repository is underconstruction, by toolsmith"]
 
 
 DocGist is a URL proxy tool that converts AsciiDoc documents fetched from Gists (http://gist.github.com), GitHub repositories, Dropbox folders and other sources to HTML.
