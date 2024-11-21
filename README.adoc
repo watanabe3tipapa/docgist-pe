@@ -31,7 +31,9 @@ python -m SimpleHTTPServer
 
 With VSCode ・・・ very easy 😅
 
-[using "Go Live"]
+[source,plaintext]
+Using "Go Live" 
+
 
 If you have Apache httpd running on your machine, you can for example add a symlink along the lines of the following to make it serve DocGist:
 
