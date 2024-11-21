@@ -115,7 +115,25 @@ MathJax.Hub.Config({
 
 <body>
     <!-- Added -->
-<p>現在、試験中 🚧</p>
+<ul id="webticker"></ul>
+    <li>現在、試験中 🚧</li>
+    <li>。。。</li>
+</ul>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-webticker/1.0.0/jquery.webticker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-webticker/1.0.0/jquery.webticker.css" />
+
+<script>
+    $(document).ready(function(){
+        $("#webticker").webTicker({
+            height: '75px',
+            duplicate: true,
+            hoverPause: true
+        });
+    });
+</script>
+
 <button onclick="saveFile('ここに保存したい内容', 'document.txt')">ファイルを保存</button>
 
 
