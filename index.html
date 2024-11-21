@@ -115,27 +115,32 @@ MathJax.Hub.Config({
 
 <body>
     <!-- Added -->
-<ul id="webticker"></ul>
-    <li>現在、試験中 🚧</li>
-    <li>。。。</li>
-</ul>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-webticker/1.0.0/jquery.webticker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-webticker/1.0.0/jquery.webticker.css" />
-
-<script>
-    $(document).ready(function(){
-        $("#webticker").webTicker({
-            height: '75px',
-            duplicate: true,
-            hoverPause: true
-        });
-    });
-</script>
+    <div class="ticker">
+        <div class="ticker-content">
+            最新ニュース: 現在、試験中 🚧 | お知らせ: 新しい機能を追加予定です。
+        </div>
+    </div>
+    
+    <style>
+    .ticker {
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+    }
+    
+    .ticker-content {
+        display: inline-block;
+        animation: ticker 10s linear infinite;
+    }
+    
+    @keyframes ticker {
+        from { transform: translateX(100%); }
+        to { transform: translateX(-100%); }
+    }
+    </style>
+    
 
 <button onclick="saveFile('ここに保存したい内容', 'document.txt')">ファイルを保存</button>
-
 
 <nav id="main-menu" class="navbar navbar-default">
     <div class="container-fluid">
@@ -148,7 +153,7 @@ MathJax.Hub.Config({
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="./">
-                <i class="fa fa-pencil-square-o"></i> DocGist
+                <i class="fa fa-pencil-square-o"></i> docdist-pe
             </a>
         </div>
         <div class="collapse navbar-collapse" id="main-menu-items">
