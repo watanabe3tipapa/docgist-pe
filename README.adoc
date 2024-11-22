@@ -3,6 +3,8 @@ watanabe3tipapa
 
 image::./images/UC900.png["This repository is underconstruction, by toolsmith"]
 
+---
+
 [collapsible, open]
 === ご本家（DocGist）
 
